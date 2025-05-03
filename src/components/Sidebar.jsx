@@ -1,35 +1,45 @@
 import React from "react";
 
+// Importando imagens corretamente (Vite precisa disso)
+import logoFuria from "../assets/Furia_Esports_logo.png";
+import cs2Icon from "../assets/cs2.ico";
+import valorantIcon from "../assets/valorant.png";
+import lolIcon from "../assets/882137f311c5728f8e257e56820af92c.png";
+import yuurihImg from "../assets/800px-Yuurih_at_PGL_Bucharest_2025.jpg";
+import fallenImg from "../assets/FalleN_at_PGL_Bucharest_2025.jpg";
+import molodoyImg from "../assets/AMKAL_molodoy_March_2025.png";
+
+// Agora os objetos usam as imagens importadas
 const players = [
   {
     name: "yuurih",
     twitch: "https://www.twitch.tv/yuurih",
-    image: "src/assets/800px-Yuurih_at_PGL_Bucharest_2025.jpg", 
+    image: yuurihImg,
   },
   {
     name: "falleN",
     twitch: "https://www.twitch.tv/gafallen",
-    image: "src/assets/FalleN_at_PGL_Bucharest_2025.jpg",
+    image: fallenImg,
   },
   {
     name: "molodoy",
     twitch: "https://www.twitch.tv/molodoy1818",
-    image: "src/assets/AMKAL_molodoy_March_2025.png",
+    image: molodoyImg,
   },
 ];
 
 const games = [
   {
     name: "CS2",
-    image: "src/assets/cs2.ico",
+    image: cs2Icon,
   },
   {
     name: "Valorant",
-    image: "src/assets/valorant.png",
+    image: valorantIcon,
   },
   {
     name: "LoL",
-    image: "src/assets/882137f311c5728f8e257e56820af92c.png",
+    image: lolIcon,
   },
 ];
 
@@ -37,7 +47,7 @@ export default function Sidebar() {
   return (
     <div className="w-1/3 bg-black text-white p-6 space-y-8 shadow-lg border-r border-gray-800 overflow-y-auto">
       <img
-        src="src\assets\Furia_Esports_logo.png"
+        src={logoFuria}
         alt="FURIA Logo"
         className="w-28 mx-auto mb-6"
       />
