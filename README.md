@@ -27,3 +27,4 @@ Este projeto é um chatbot interativo voltado para fãs da organização FURIA E
 ```bash
 git clone https://github.com/seu-usuario/furia-chatbot.git
 cd furia-chatbot
+(Atualmente sem a chave OPENAI, para não acontecer de roubarem minha chave.)
